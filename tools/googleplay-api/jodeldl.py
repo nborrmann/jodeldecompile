@@ -23,7 +23,7 @@ version_code = r.docV2.details.appDetails.versionCode
 file_size = r.docV2.details.appDetails.installationSize
 
 print "current version is ", version, "published on ",  date
-f_name = "~/jodeldecompile/apks/com.tellm.android.app-%s.apk" % version
+f_name = "/root/jodeldecompile/apks/com.tellm.android.app-%s.apk" % version
 
 if os.path.isfile(f_name) and os.path.getsize(f_name) == file_size:
     print "already downloaded"
